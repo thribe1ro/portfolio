@@ -107,15 +107,15 @@ var quadradoSkill1 = document.querySelector(".primeiraSkill")
 var marginQuadrado1 = document.querySelector("#primeiraSkill")
 var textoSkill1 = document.getElementById("textoSkill")
 
-var rotacao = false;
+var rotacaoUm = false;
 
 arrow1.addEventListener("click", function() {
-    rotacao = !rotacao;
-    arrow1.style.transform = rotacao ? "rotate(90deg)" : "rotate(0deg)"
-    quadradoSkill1.style.height = rotacao ? "200px" : "100px"
-    marginQuadrado1.style.margin = rotacao ? "0 0 1rem 0" : "0 0 0 0"
-    textoSkill1.style.opacity = rotacao ? "1" : "0"
-    textoSkill1.style.margin = rotacao ? "10rem 0 0 5rem" : "5rem 0 0 5rem"
+    rotacaoUm = !rotacaoUm;
+    arrow1.style.transform = rotacaoUm ? "rotate(90deg)" : "rotate(0deg)"
+    quadradoSkill1.style.height = rotacaoUm ? "200px" : "100px"
+    marginQuadrado1.style.margin = rotacaoUm ? "0 0 1rem 0" : "0 0 0 0"
+    textoSkill1.style.opacity = rotacaoUm ? "1" : "0"
+    textoSkill1.style.margin = rotacaoUm ? "0 0 0 0" : "-5rem 0 0 0"
 })
 
 // Quadrado 2
@@ -124,13 +124,15 @@ var quadradoSkill2 = document.querySelector(".segundaSkill")
 var marginQuadrado2 = document.querySelector("#segundaSkill")
 var textoSkill2 = document.querySelector(".textoSkill2")
 
+var rotacaoDois = false
+
 arrow2.addEventListener("click", function() {
-    rotacao = !rotacao;
-    arrow2.style.transform = rotacao ? "rotate(90deg)" : "rotate(0deg)"
-    quadradoSkill2.style.height = rotacao ? "200px" : "100px"
-    marginQuadrado2.style.margin = rotacao ? "0 0 1rem 0" : "0 0 0 0"
-    textoSkill2.style.opacity = rotacao ? "1" : "0"
-    textoSkill2.style.margin = rotacao ? "10rem 0 0 5rem" : "5rem 0 0 5rem"
+    rotacaoDois = !rotacaoDois;
+    arrow2.style.transform = rotacaoDois ? "rotate(90deg)" : "rotate(0deg)"
+    quadradoSkill2.style.height = rotacaoDois ? "200px" : "100px"
+    marginQuadrado2.style.margin = rotacaoDois ? "0 0 1rem 0" : "0 0 0 0"
+    textoSkill2.style.opacity = rotacaoDois ? "1" : "0"
+    textoSkill2.style.margin = rotacaoDois ? "0 0 0 0" : "-5rem 0 0 0"
 })
 
 // ========================================================= //
