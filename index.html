@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body onload="carregar()">
+    <div class="quadrado">
+        <div class="primeiroQuadrado">
+            <section id="primeiroQuadrado">
+                <a href="https://linktr.ee/ribeiroth" target="_blank"><img src="/icons/genetic-data-svgrepo-com.svg" id="imagemUm" class="img-50px"></a>
+                <img src="/icons/curriculum-resume-svgrepo-com.svg" id="imagemDois" class="img-50px">
+                <a href="https://github.com/thribe1ro" target="_blank"><img src="/icons/github-142-svgrepo-com.svg" id="imagemTres" class="img-50px"></a>
+                <a href="https://www.linkedin.com/in/thribe1ro/" target="_blank"><img src="/icons/linkedin-161-svgrepo-com.svg" id="imagemQuatro" class="img-50px"></a>
+            </section>
+        </div>
+        <div class="segundoQuadrado">
+            <h2 class="primario"></h2>
+            <section id="segundoQuadrado">
+                <div class="quadradoTextoPrimario">
+                <h1 id="primario">Thiago Ribeiro</h1>
+                <h2 id="secundario">Atualmente graduando Análise e Desenvolvimento de Sitemas e se especializando em front-end.</h2>
+                </div>
+                    <div class="imagensSegundoQuadrado">
+                        <div class="miniGithub" onmouseover="passarMouseImg1(1)" onmouseout="passarMouseImg1(2)" onclick="passarMouseImg1(3)">
+                            <img src="/icons/github-142-svgrepo-com.svg">
+                        </div>
+                        <div class="miniLinkedin" onmouseover="passarMouseImg2(1)" onmouseout="passarMouseImg2(2)" onclick="passarMouseImg2(3)">
+                            <img src="/icons/linkedin-161-svgrepo-com.svg">
+                        </div>
+                    </div>
+            </section>
+            <div class="projetos">
+                <h1 id="primario" class="meusProjetos">Meus Projetos</h1>
+                <div class="projetosDois">
+            <section id="terceiroMiniQuadrado" onmouseover="passarMouseImg3(1)" onmouseout="passarMouseImg3(2)">
+                <img src="/icons/projeto1.png" alt="Projeto 1" id="imagemCurriculo">
+            </section>
+            <section id="quartoMiniQuadrado" onmouseover="passarMouseImg4(1)" onmouseout="passarMouseImg4(2)" onclick="passarMouseImg4(3)">
+                <img src="/icons/projeto2.png" alt="Projeto 2">
+            </section>
+            <section id="quintoMiniQuadrado" onmouseover="passarMouseImg5(1)" onmouseout="passarMouseImg5(2)" onclick="passarMouseImg5(3)"></section>
+        </div>
+        </div>
+        </div>
+        <div class="terceiroQuadrado">
+            <h2 class="nextSkillsText">Próximas habilidades</h2>
+            <section id="terceiroQuadrado">
+                <div class="imagemTercerioQuadrado">
+                    <img src="/icons/react-16-svgrepo-com.svg" alt="React" id="imgReact">
+                    <img src="/icons/php02-svgrepo-com.svg" alt="PHP" id="imgPhp">
+                    <img src="/icons/mysql-svgrepo-com.svg" alt="MySQL" id="imgSql">
+                </div>
+            </section>
+        </div>
+        <div class="quartoQuadrado">
+            <h2 class="mySkillsText">Minhas habilidades</h2>
+            <!-- Primeiro quadrado das minhas habilidades -->
+            <section id="quartoQuadrado">
+                <div id="primeiraSkill">
+                <div class="primeiraSkill">
+                    <img src="/icons/javascript-16-svgrepo-com.svg" alt="JavaScript" id="miniIcons">
+                    <img src="/icons/css-16-svgrepo-com.svg" alt="CSS" id="miniIcons">
+                    <img src="/icons/html-16-svgrepo-com.svg" alt="HTML5" id="miniIcons">
+                    <img src="/icons/arrow-right-circle-svgrepo-com.svg" alt="FLECHA" class="arrow" id="arrow1">
+                </div>
+                <div id="textoSkill">
+                    <p>Curso em vídeo</p>
+                </div>
+            </div>
+            
+            <!-- ========================================== -->
+
+            <!-- Primeiro quadrado das minhas habilidades -->
+            <div id="segundaSkill">
+                <div class="segundaSkill">
+                    <img src="/icons/git-svgrepo-com.svg" alt="GIT" id="miniIcons">
+                    <img src="/icons/github-142-svgrepo-com.svg" alt="github" id="miniIcons">
+                    <img src="/icons/arrow-right-circle-svgrepo-com.svg" alt="FLECHA" class="arrow" id="arrow2">
+                </div>
+                <div id="textoSkill" class="textoSkill2">
+                    <p>Curso em vídeo</p>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+        </section>
+        </div>
+    </div>
+</body>
+<!-- Abrir curriculo -->
+<section id="curriculo">
+    <div id="quadradoCurriculo">
+        <img src="/icons/Curriculoparte1.svg" alt="Curriculo parte 1">
+        <img src="/icons/Curriculoparte2.svg" alt="Curriculo parte 2">
+        <button id="x">X</button>
+    </div>
+</section>
+<!-- ------------------------------------- -->
+
+<!-- Abrir projeto 1 -->
+<section id="projetoUm">
+    <div id="quadradoProjetoUm">
+        <div id="imagemProjetoUm">
+            <img src="/icons/projetoUm.png" alt="Projeto 1">
+        </div>
+        <div id="textoProjetoUm">
+            <p>Formulário de entrega<br>
+
+            Trabalhei em uma drogaria, tinhamos um serviço de delivery.<br>
+            
+            Este é meu primeiro projeto para ajudar a facilitar o meu dia a dia e dos meus colegas de serviço.<br>
+            
+            Estou atualizando o projeto conforme eu vou aprendendo mais sobre a linguagem JavaScript.<br>
+            
+            O sistema de delivery a gente mesmo pode pedir ou pedir para outra filial que possa realizar a entrega.<br>
+            
+            Existe um sistema de if else com mais de 1000 códigos internos para gerar o nome do produto.<br>
+            
+            Existe máscaras como :<br>
+            <strong> Telefone (12) 98877-6655 | CPF 123.456.789-10 </strong> <br>
+            <strong> Dinheiro R$ 123,45 | Código interno 123456.7 </strong> <br>
+            
+            Como funciona :<br>
+            
+            O atendente vai abrir a tela de preenchimento de dados.<br>
+            Em seguida ele ira pedir as informações ao cliente.<br>
+            Tem a opção de selecionar a filial que deseja mandar a mensagem e ira aparecer o endereço onde fica localizada.<br>
+            Depois é copiar o endereço que está no quadro a esquerda clicando no botão copiar e enviar para a filial solicitada.</p>
+            <a href="www.googole.com" target="_blank">Saiba mais</a>
+            </div>
+        <button id="x" class="xProjetoUm" style="margin: 10px 20px 0 0;">X</button>
+    </div>
+</section>
+
+<!-- Abrir projeto 2 -->
+<section id="projetoDois">
+    <div id="quadradoProjetoDois">
+        <div id="imagemProjetoDois">
+            <img src="/icons/futvalle1.png" alt="Projeto 2">
+            <img src="/icons/futvalle2.png" alt="Projeto 2">
+        </div>
+        <div id="textoProjetoDois">
+            <p>Lading Page<br>
+
+            Criei uma landing page de uma concept de uma loja.<br>
+            
+            Este é meu primeiro projeto de loja de roupa.<br>
+
+            <a href="www.googole.com" target="_blank">Saiba mais</a>
+            </div>
+        <button id="x" class="xProjetoDois" style="margin: 10px 20px 0 0;">X</button>
+    </div>
+</section>
+<!-- ------------------------------------- -->
+<script src="/javascript/abrirsection.js"></script>
+</html>
+
