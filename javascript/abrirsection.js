@@ -206,10 +206,10 @@ function carregar() {
     var contagemTexto = document.getElementById("contagem")
 
     botaoIniciar.addEventListener("click", () => {
-        let contagem = 6
+        let contagem = 5
         const intervaloId = setInterval(() => {
             contagem--;
-            contagemTexto.textContent = `Começando em ${contagem} segundos`
+            contagemTexto.textContent = `Começando em ${contagem} segundos.`
             if (contagem === 0) {
                 clearInterval(intervaloId);
                 mensagem.textContent = "Ação realizada!";
