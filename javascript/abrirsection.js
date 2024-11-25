@@ -1,3 +1,4 @@
+
 // Girar e por sombra nos icones pequenos
 var sombra1 = document.querySelector(".miniGithub")
 
@@ -95,7 +96,6 @@ function passarMouseImg5(tipo) {
         alert("Ola")
     }
 } */
-
     
 // =================================================================================================== //
 
@@ -196,4 +196,28 @@ function carregar() {
     x.addEventListener("click", function() {
         abrirCurriculo = !abrirCurriculo
         curriculo.style.display = abrirCurriculo ? "flex" : "none"
+    })
+
+
+    // Botão de iniciar o programa
+    var botaoIniciar = document.getElementById("botaoIniciar")
+    var limparTela = document.querySelector(".quadrado")
+    var comecar = document.getElementById("comecar")
+    var contagemTexto = document.getElementById("contagem")
+
+    botaoIniciar.addEventListener("click", () => {
+        let contagem = 6
+        const intervaloId = setInterval(() => {
+            contagem--;
+            contagemTexto.textContent = `Começando em ${contagem} segundos`
+            if (contagem === 0) {
+                clearInterval(intervaloId);
+                mensagem.textContent = "Ação realizada!";
+            }
+        }, 1000);
+
+        setTimeout(() => {
+            limparTela.style.display = "flex"
+            comecar.style.display = "none"
+        }, 5000);
     })
