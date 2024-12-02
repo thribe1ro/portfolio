@@ -75,7 +75,7 @@ function passarMouseImg4(tipo) {
 }
 
 projeto2.addEventListener("click", function(){
-    ativarDois = !ativarUm
+    ativarDois = !ativarDois
     projetoDois.style.display = ativarDois ? "flex" : "none"
 })
     xProjetoDois.addEventListener("click", function() {
