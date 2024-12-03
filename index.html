@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/telas.css">
     <link rel="shortcut icon" href="/icons/genetic-data-svgrepo-com.svg" type="image/x-icon">
 </head>
 <body onload="carregar()">
@@ -16,6 +17,26 @@
                 <a href="https://github.com/thribe1ro" target="_blank"><img src="/icons/github-142-svgrepo-com.svg" id="imagemTres" class="img-50px"></a>
                 <a href="https://www.linkedin.com/in/thribe1ro/" target="_blank"><img src="/icons/linkedin-161-svgrepo-com.svg" id="imagemQuatro" class="img-50px"></a>
             </section>
+            
+            <!-- Mobile -->
+            <div id="mobile">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                  </div>
+                  <nav class="nav" id="nav">
+                    <ul>
+                      <li><a href="https://linktr.ee/ribeiroth" target="_blank"><img src="/icons/genetic-data-svgrepo-com.svg" id="imagemUm" class="img-50px"></a></li>
+                      <li><img src="/icons/curriculum-resume-svgrepo-com.svg" id="imagemDois" class="img-50px"></li>
+                      <li><a href="https://github.com/thribe1ro" target="_blank"><img src="/icons/github-142-svgrepo-com.svg" id="imagemTres" class="img-50px"></a></li>
+                      <li><a href="https://www.linkedin.com/in/thribe1ro/" target="_blank"><img src="/icons/linkedin-161-svgrepo-com.svg" id="imagemQuatro" class="img-50px"></a></li>
+                    </ul>
+                  </nav> 
+            </div>
+                <!-- Fim Mobile -->
+
+                <div class="menu-bg" id="menu-bg"></div>
         </div>
         <div class="segundoQuadrado">
             <h2 class="primario"></h2>
@@ -163,5 +184,6 @@
 </section>
 <!-- ------------------------------------- -->
 <script src="/javascript/abrirsection.js"></script>
+<script src="/javascript/mobile.js"></script>
 </html>
 
