@@ -1,456 +1,1883 @@
-@media screen and (max-width: 390px) {
-    @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Klee+One&family=Kode+Mono:wght@400..700&display=swap');
-    
-  :root {
-        --font-main: "Kode Mono", monospace;
-    }
-    
-    * {
-        margin: 0;
-    }
 
-  body {
-    background: #151736;
-    user-select: none;
-    width: 100%;
-    }
-
-  .quadrado {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    }
-
-    /* PRIMEIRO QUADRADO */
-  #primeiroQuadrado {
-    display: none;
-    z-index: 0;
+@media (min-width: 390px) and (max-width: 430px) {
+  @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Klee+One&family=Kode+Mono:wght@400..700&display=swap');
+  
+:root {
+      --font-main: "Kode Mono", monospace;
+  }
+  
+  * {
+      margin: 0;
   }
 
-  #mobile {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 20;
+body {
+  background: #151736;
+  user-select: none;
+  width: 100%;
   }
 
-  /* MENU */
-  #menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
+.quadrado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
   }
-  
-  .bar {
-    height: 5px;
-    width: 100%;
-    background-color: #3b61bb;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-  
-  #bar1 {
-    transform: translateY(-4px);
-  }
-  
-  #bar3 {
-    transform: translateY(4px);
-  }
-  
-  .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 22px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 12px 0;
-  }
-  
-  .nav li a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover {
-    font-weight: bold;
-  }
-  
-  .menu-bg, #menu {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  .menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background: #3b61bb;
-    border-radius: 10px;
-    transition: 0.3s ease;
-  }
-  
-  .change {
-    display: block;
-  }
-  
-  .change .bar {
-    background-color: #fff;
-  }
-  
-  .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-  }
-  
-  .change #bar2 {
-    opacity: 0;
-  }
-  
-  .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-  }
-  
-  .change-bg {
-    width: 18rem;
-    height: 35rem;
-    transform: translate(-60%,-30%);
-    box-shadow: 1px 1px 8px 2px #000;
-  }
+
+  /* PRIMEIRO QUADRADO */
+#primeiroQuadrado {
+  display: none;
+  z-index: 0;
+}
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 20;
+}
+
+/* MENU */
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #3b61bb;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #3b61bb;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 18rem;
+  height: 35rem;
+  transform: translate(-60%,-30%);
+  box-shadow: 1px 1px 8px 2px #000;
+}
 
 /* SEGUNDO QUADRADO */
 
 .segundoQuadrado {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  top: 5rem;
-  margin: 0;
-  z-index: 2;
-  text-align: center;
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 5rem;
+margin: 0;
+z-index: 2;
+text-align: center;
 }
 
 .segundoQuadrado h2 {
-  width: 20rem;
+width: 20rem;
 }
 
 .quadradoTextoPrimario {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 14rem;
-  margin: 0;
-  text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+height: 14rem;
+margin: 0;
+text-align: center;
 }
 
 #segundoQuadrado {
-  width: 20rem;
-  height: 15rem;
-  margin-top: 1rem;
-  background: #3b61bb;
-  border-radius: 10px 10px 50% 10px / 10px 10px 50% 10px;
-  box-shadow: 10px 8px 15px -5px rgba(0, 20, 79, 0.41);
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  transition: all 1s;
+width: 22rem;
+height: 15rem;
+margin-top: 1rem;
+background: #3b61bb;
+border-radius: 10px 10px 50% 10px / 10px 10px 50% 10px;
+box-shadow: 10px 8px 15px -5px rgba(0, 20, 79, 0.41);
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
 }
 
 #primario, .primario {
-  font-family: var(--font-main);
-  color: #fff;
-  text-shadow: 1px 2px #000;
-  font-size: 20pt;
-  z-index: 10;
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 20pt;
+z-index: 10;
 }
 
 #secundario {
-  font-family: var(--font-main);
-  color: #fff;
-  text-shadow: 1px 2px #000;
-  font-size: 12pt;
-  position: relative;
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 12pt;
+position: relative;
 }
 
 .imagensSegundoQuadrado {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 100%;
-  top: -10px;
+display: flex;
+flex-direction: row;
+position: relative;
+width: 100%;
+top: -10px;
 }
 
 .miniGithub, .miniLinkedin  {
-  display: flex;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: #000;
-  border-radius: 10px;
-  margin: 0rem 0 0 4rem;
-  cursor: pointer;
-  transition: all 1s;
+display: flex;
+align-items: center;
+width: 40px;
+height: 40px;
+background: #000;
+border-radius: 10px;
+margin: 0rem 0 0 4rem;
+cursor: pointer;
+transition: all 1s;
 }
 
 .miniGithub>img, .miniLinkedin>img {
-  width: 40px;
-  height: 30px;
-  margin: auto;
+width: 40px;
+height: 30px;
+margin: auto;
 }
 
 /* PROJETOS */
 .projetos {
-  display: flex;
-  flex-direction: column;
-  width: 22rem;
-  height: 20rem;
-  position: relative;
-  margin: 3rem 0 0 0;
-  text-align: center;
+display: flex;
+flex-direction: column;
+width: 22rem;
+height: 20rem;
+position: relative;
+margin: 3rem 0 0 0;
+text-align: center;
 }
 
 #terceiroMiniQuadrado, #quartoMiniQuadrado {
-  width: 150px;
-  height: 150px;
-  margin: 1rem 0 0 1rem;
-  background: #3b61bb;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  transition: all 1s;
-  cursor: pointer;
+width: 150px;
+height: 150px;
+margin: 1rem 0 0 1rem;
+background: #3b61bb;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
+cursor: pointer;
 }
 
 #imagemCurriculo {
-  margin: auto;
-  width: 150px;
-  height: 150px;
+margin: auto;
+width: 150px;
+height: 150px;
 }
 
 
 /* TERCEIRO QUADRADO */
 
 .terceiroQuadrado {
-  position: absolute;
-  top: 35rem;
-  width: 100%;
-  margin: 0;
+position: absolute;
+top: 34rem;
+width: 100%;
+margin: 0;
 }
 
 #terceiroQuadrado {
-  width: 20rem;
-  height: 6rem;
-  margin-top: 13rem;
-  background: #3b61bb;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+width: 20rem;
+height: 6rem;
+margin-top: 13rem;
+background: #3b61bb;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
 }
 
 .imagemTercerioQuadrado {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 100%;
-  padding-top: 1.5rem;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 100%;
+padding-top: 1.5rem;
 }
 
 .nextSkillsText {
-  position: absolute;
-  width: 21rem;
-  font-family: var(--font-main);
-  text-shadow: 1px 2px #000;
-  color: #fff;
-  font-size: 20pt;
-  text-align: center;
+position: absolute;
+width: 21rem;
+font-family: var(--font-main);
+text-shadow: 1px 2px #000;
+color: #fff;
+font-size: 20pt;
+text-align: center;
 }
 
 
 @keyframes vaievolta1 {
-  0% {
-      margin-left: 0;
-  }
-  100% {
-     margin-left: 1.5rem;
-  }
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1.5rem;
+}
 }
 
 @keyframes vaievolta2 {
-  0% {
-      margin-left: 0;
-  }
-  100% {
-     margin-left: 1rem;
-  }
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
 }
 
 @keyframes vaievolta3 {
-  0% {
-      margin-left: 0;
-  }
-  100% {
-     margin-left: 1rem;
-  }
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
 }
 
 /* Quarto Quadrado */
 
 .quartoQuadrado {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  top: 50rem;
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 50rem;
 }
 
 /* Curriculo */
 #curriculo {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 150vh;
-  background: #0000009d;
-  z-index: 99;
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 150vh;
+background: #0000009d;
+z-index: 99;
 }
 
 #quadradoCurriculo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 90%;
-  height: 40rem;
-  background: #3b61bb;
-  margin: 10rem auto;
-  border-radius: 5px;
-  margin-top: 15rem;
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 90%;
+height: 40rem;
+background: #3b61bb;
+top: 5rem;
+left: 1rem;
+border-radius: 5px;
+margin-top: 15rem;
 }
 
 #quadradoCurriculo #x {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  top: -60rem;
-  left: 9rem;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #000;
-  font-weight: 600;
-  font-size: 15pt;
-  font-family: 'Courier New', Courier, monospace;
+position: relative;
+width: 2rem;
+height: 2rem;
+top: -65rem;
+left: 9rem;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+color: #000;
+font-weight: 600;
+font-size: 15pt;
+font-family: 'Courier New', Courier, monospace;
 }
 
 /* Projeto 1 */
 #projetoUm {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 25rem;
-  height: auto;
-  background: #0000009d;
-  z-index: 99;
+display: none;
+position: absolute;
+top: 0;
+width: 25rem;
+height: auto;
+background: #0000009d;
+z-index: 99;
 }
 
 #quadradoProjetoUm {
-  display: flex;
-  flex-direction: column;
-  width: 23rem;
-  height: 40rem;
-  background: #3b61bb;
-  margin: 10rem auto;
-  border-radius: 5px;
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 40rem;
+background: #3b61bb;
+margin: 10rem auto;
+border-radius: 5px;
 }
 
 #imagemProjetoUm {
-  display: flex;
-  align-items: center;
-  width: 0;
+display: flex;
+align-items: center;
+width: 0;
 }
 
 #imagemProjetoUm img {
-  width: 20rem;
-  margin: 0 0 0 -10rem;
+width: 20rem;
+margin: 0 0 0 -10rem;
 }
 
 #textoProjetoUm {
-  margin: auto;
-  width: 20rem;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10pt;
-  font-weight: 600;
-  color: #fff;
+margin: auto;
+width: 20rem;
+text-align: center;
+font-family: sans-serif;
+font-size: 10pt;
+font-weight: 600;
+color: #fff;
 }
 
 #projetoUm #x {
-  top: -41rem;
-  left: 10rem;
+top: -41rem;
+left: 10rem;
 }
 /* =============================== */
 
 /* Projeto 2 */
 #projetoDois {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 25rem;
-  height: auto;
-  background: #0000009d;
-  z-index: 99;
+display: none;
+position: absolute;
+top: 0;
+width: 25rem;
+height: auto;
+background: #0000009d;
+z-index: 99;
 }
 
 #quadradoProjetoDois {
-  display: flex;
-  flex-direction: column;
-  width: 23rem;
-  height: 40rem;
-  background: #3b61bb;
-  border-radius: 5px;
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 40rem;
+background: #3b61bb;
+border-radius: 5px;
 }
 
 #imagemProjetoDois {
-  display: flex;
-  flex-direction: column;
-  width: 23rem;
-  height: 24rem;
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 24rem;
 }
 
 #imagemProjetoDois img {
-  margin: 1rem auto;
-  height: 10rem;
+margin: 1rem auto;
+height: 10rem;
 }
 
 #textoProjetoDois {
-  margin: auto;
-  width: 22rem;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10pt;
-  font-weight: 600;
-  color: #fff;
+margin: auto;
+width: 22rem;
+text-align: center;
+font-family: sans-serif;
+font-size: 10pt;
+font-weight: 600;
+color: #fff;
 }
 
 #projetoDois #x {
-  top: -41rem;
-  left: 10rem;
+top: -41rem;
+left: 10rem;
 }
 
 /* =============================== */
 }
+
+@media (min-width: 430px) and (max-width:767px) {
+  @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Klee+One&family=Kode+Mono:wght@400..700&display=swap');
+  
+:root {
+      --font-main: "Kode Mono", monospace;
+  }
+  
+  * {
+      margin: 0;
+  }
+
+body {
+  background: #151736;
+  user-select: none;
+  width: 100%;
+  }
+
+.quadrado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  }
+
+  /* PRIMEIRO QUADRADO */
+#primeiroQuadrado {
+  display: none;
+  z-index: 0;
+}
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 20;
+}
+
+/* MENU */
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #3b61bb;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #3b61bb;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 18rem;
+  height: 35rem;
+  transform: translate(-60%,-30%);
+  box-shadow: 1px 1px 8px 2px #000;
+}
+
+/* SEGUNDO QUADRADO */
+
+.segundoQuadrado {
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 5rem;
+margin: 0;
+z-index: 2;
+text-align: center;
+}
+
+.segundoQuadrado h2 {
+width: 20rem;
+}
+
+.quadradoTextoPrimario {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+height: 14rem;
+margin: 0;
+text-align: center;
+}
+
+#segundoQuadrado {
+width: 25rem;
+height: 15rem;
+margin-top: 1rem;
+background: #3b61bb;
+border-radius: 10px 10px 50% 10px / 10px 10px 50% 10px;
+box-shadow: 10px 8px 15px -5px rgba(0, 20, 79, 0.41);
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
+}
+
+#primario, .primario {
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 20pt;
+z-index: 10;
+}
+
+#secundario {
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 12pt;
+position: relative;
+}
+
+.imagensSegundoQuadrado {
+display: flex;
+flex-direction: row;
+position: relative;
+width: 100%;
+top: -10px;
+}
+
+.miniGithub, .miniLinkedin  {
+display: flex;
+align-items: center;
+width: 40px;
+height: 40px;
+background: #000;
+border-radius: 10px;
+margin: 0rem 0 0 4rem;
+cursor: pointer;
+transition: all 1s;
+}
+
+.miniGithub>img, .miniLinkedin>img {
+width: 40px;
+height: 30px;
+margin: auto;
+}
+
+/* PROJETOS */
+.projetos {
+display: flex;
+flex-direction: column;
+width: 22rem;
+height: 20rem;
+position: relative;
+margin: 3rem 0 0 0;
+text-align: center;
+}
+
+#terceiroMiniQuadrado, #quartoMiniQuadrado {
+width: 150px;
+height: 150px;
+margin: 1rem 0 0 1rem;
+background: #3b61bb;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
+cursor: pointer;
+}
+
+#imagemCurriculo {
+margin: auto;
+width: 150px;
+height: 150px;
+}
+
+
+/* TERCEIRO QUADRADO */
+
+.terceiroQuadrado {
+position: absolute;
+top: 34rem;
+width: 100%;
+margin: 0;
+}
+
+#terceiroQuadrado {
+width: 20rem;
+height: 6rem;
+margin-top: 13rem;
+background: #3b61bb;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.imagemTercerioQuadrado {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 100%;
+padding-top: 1.5rem;
+}
+
+.nextSkillsText {
+position: absolute;
+width: 21rem;
+font-family: var(--font-main);
+text-shadow: 1px 2px #000;
+color: #fff;
+font-size: 20pt;
+text-align: center;
+}
+
+
+@keyframes vaievolta1 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1.5rem;
+}
+}
+
+@keyframes vaievolta2 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
+}
+
+@keyframes vaievolta3 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
+}
+
+/* Quarto Quadrado */
+
+.quartoQuadrado {
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 50rem;
+}
+
+/* Curriculo */
+#curriculo {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 150vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoCurriculo {
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 90%;
+height: 40rem;
+background: #3b61bb;
+top: 10rem;
+left: 1rem;
+border-radius: 5px;
+margin-top: 15rem;
+}
+
+#quadradoCurriculo #x {
+position: relative;
+width: 2rem;
+height: 2rem;
+top: -72rem;
+left: 10rem;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+color: #000;
+font-weight: 600;
+font-size: 15pt;
+font-family: 'Courier New', Courier, monospace;
+}
+
+/* Projeto 1 */
+#projetoUm {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 140vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoProjetoUm {
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 40rem;
+background: #3b61bb;
+margin: 10rem auto;
+border-radius: 5px;
+}
+
+#imagemProjetoUm {
+display: flex;
+align-items: center;
+width: 0;
+}
+
+#imagemProjetoUm img {
+width: 20rem;
+margin: 0 0 0 -10rem;
+}
+
+#textoProjetoUm {
+margin: auto;
+width: 20rem;
+text-align: center;
+font-family: sans-serif;
+font-size: 10pt;
+font-weight: 600;
+color: #fff;
+}
+
+#projetoUm #x {
+top: -41rem;
+left: 10rem;
+}
+/* =============================== */
+
+/* Projeto 2 */
+#projetoDois {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 140vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoProjetoDois {
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 40rem;
+background: #3b61bb;
+border-radius: 5px;
+}
+
+#imagemProjetoDois {
+display: flex;
+flex-direction: column;
+width: 23rem;
+height: 24rem;
+}
+
+#imagemProjetoDois img {
+margin: 1rem auto;
+height: 10rem;
+}
+
+#textoProjetoDois {
+margin: auto;
+width: 22rem;
+text-align: center;
+font-family: sans-serif;
+font-size: 10pt;
+font-weight: 600;
+color: #fff;
+}
+
+#projetoDois #x {
+top: -41rem;
+left: 10rem;
+}
+
+/* =============================== */
+
+}
+
+@media (min-width: 768px) and (max-width:1280px) {
+  @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Klee+One&family=Kode+Mono:wght@400..700&display=swap');
+  
+:root {
+      --font-main: "Kode Mono", monospace;
+  }
+  
+  * {
+      margin: 0;
+  }
+
+body {
+  background: #151736;
+  user-select: none;
+  width: 100%;
+  }
+
+.quadrado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  }
+
+  /* PRIMEIRO QUADRADO */
+#primeiroQuadrado {
+  display: none;
+  z-index: 0;
+}
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 20;
+}
+
+/* MENU */
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #3b61bb;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #3b61bb;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 18rem;
+  height: 35rem;
+  transform: translate(-60%,-30%);
+  box-shadow: 1px 1px 8px 2px #000;
+}
+
+/* SEGUNDO QUADRADO */
+
+.segundoQuadrado {
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 5rem;
+margin: 0;
+z-index: 2;
+text-align: center;
+}
+
+.segundoQuadrado .primario {
+width: 100%;
+}
+
+.quadradoTextoPrimario {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+height: 14rem;
+margin: 0;
+text-align: center;
+}
+
+#segundoQuadrado {
+width: 30rem;
+height: 15rem;
+margin-top: 1rem;
+background: #3b61bb;
+border-radius: 10px 10px 50% 10px / 10px 10px 50% 10px;
+box-shadow: 10px 8px 15px -5px rgba(0, 20, 79, 0.41);
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
+}
+
+#primario, .primario {
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 20pt;
+z-index: 10;
+}
+
+#secundario {
+font-family: var(--font-main);
+color: #fff;
+text-shadow: 1px 2px #000;
+font-size: 12pt;
+position: relative;
+width: 100%;
+}
+
+.imagensSegundoQuadrado {
+display: flex;
+flex-direction: row;
+position: relative;
+width: 100%;
+top: -10px;
+}
+
+.miniGithub, .miniLinkedin  {
+display: flex;
+align-items: center;
+width: 40px;
+height: 40px;
+background: #000;
+border-radius: 10px;
+margin: 0rem 0 0 4rem;
+cursor: pointer;
+transition: all 1s;
+}
+
+.miniGithub>img, .miniLinkedin>img {
+width: 40px;
+height: 30px;
+margin: auto;
+}
+
+/* PROJETOS */
+.projetos {
+display: flex;
+flex-direction: column;
+width: 22rem;
+height: 20rem;
+position: relative;
+margin: 3rem 0 0 0;
+text-align: center;
+}
+
+#terceiroMiniQuadrado, #quartoMiniQuadrado {
+width: 150px;
+height: 150px;
+margin: 1rem 0 0 1rem;
+background: #3b61bb;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+transition: all 1s;
+cursor: pointer;
+}
+
+#imagemCurriculo {
+margin: auto;
+width: 150px;
+height: 150px;
+}
+
+
+/* TERCEIRO QUADRADO */
+
+.terceiroQuadrado {
+position: absolute;
+top: 34rem;
+width: 100%;
+margin: 0;
+}
+
+#terceiroQuadrado {
+width: 20rem;
+height: 6rem;
+margin-top: 13rem;
+background: #3b61bb;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.imagemTercerioQuadrado {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 100%;
+padding-top: 1.5rem;
+}
+
+.nextSkillsText {
+position: absolute;
+width: 21rem;
+font-family: var(--font-main);
+text-shadow: 1px 2px #000;
+color: #fff;
+font-size: 20pt;
+text-align: center;
+}
+
+
+@keyframes vaievolta1 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1.5rem;
+}
+}
+
+@keyframes vaievolta2 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
+}
+
+@keyframes vaievolta3 {
+0% {
+    margin-left: 0;
+}
+100% {
+   margin-left: 1rem;
+}
+}
+
+/* Quarto Quadrado */
+
+.quartoQuadrado {
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+top: 50rem;
+}
+
+/* Curriculo */
+#curriculo {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 150vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoCurriculo {
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 95%;
+height: 40rem;
+background: #3b61bb;
+top: 10rem;
+left: 1rem;
+border-radius: 5px;
+align-items: center;
+}
+
+#quadradoCurriculo img {
+  width: 350px;
+  margin: auto;
+  padding-left: 1px;
+}
+
+#quadradoCurriculo #x {
+position: absolute;
+width: 2rem;
+height: 2rem;
+top: 0rem;
+left: 22rem;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+color: #000;
+font-weight: 600;
+font-size: 15pt;
+font-family: 'Courier New', Courier, monospace;
+}
+
+/* Projeto 1 */
+#projetoUm {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 125vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoProjetoUm {
+display: flex;
+flex-direction: column;
+width: 45rem;
+height: 45rem;
+background: #3b61bb;
+margin: 10rem auto;
+border-radius: 5px;
+}
+
+#imagemProjetoUm {
+display: flex;
+align-items: center;
+width: 100%;
+height: 24rem;
+margin: 0 auto;
+}
+
+#imagemProjetoUm img {
+  margin: 1rem auto;
+  width: 40rem;
+  height: 20rem;
+}
+
+#textoProjetoUm {
+margin: 0 auto;
+width: 100%;
+text-align: center;
+font-family: sans-serif;
+font-size: 11pt;
+font-weight: 600;
+color: #fff;
+}
+
+#projetoUm #x {
+top: -46rem;
+left: 21rem;
+}
+/* =============================== */
+
+/* Projeto 2 */
+#projetoDois {
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 125vh;
+background: #0000009d;
+z-index: 99;
+}
+
+#quadradoProjetoDois {
+display: flex;
+flex-direction: column;
+width: 45rem;
+height: 45rem;
+background: #3b61bb;
+border-radius: 5px;
+}
+
+#imagemProjetoDois {
+display: flex;
+flex-direction: row;
+width: 90%;
+height: 24rem;
+margin: 0 auto;
+}
+
+#imagemProjetoDois img {
+margin: 1rem auto;
+width: 30rem;
+height: 20rem;
+}
+
+#textoProjetoDois {
+margin: 0 auto;
+width: 100%;
+text-align: center;
+font-family: sans-serif;
+font-size: 15pt;
+font-weight: 600;
+color: #fff;
+}
+
+#projetoDois #x {
+top: -37rem;
+left: 21rem;
+}
+
+/* =============================== */
+
+}
+
+@media screen and (min-width: 1440px) {
+ 
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Klee+One&family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    --font-main: "Kode Mono", monospace;
+}
+
+* {
+    margin: 0;
+}
+
+#mobile {
+    display: none;
+}
+body {
+    background: #151736;
+    user-select: none;
+}
+
+.quadrado {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+/* MOBILE */
+#mobile {
+    display: none;
+}
+
+/* PRIMEIRO QUADRADO */
+
+.primeiroQuadrado {
+    display: flex;
+    z-index: 98;
+}
+
+#primeiroQuadrado {
+    margin: 5rem 0 0 3rem;
+    width: 100px;
+    height: 366px;
+    background: #3b61bb;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 1s;
+}
+
+.img-50px {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+/* SEGUNDO QUADRADO */
+
+.segundoQuadrado {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    align-items: center;
+    margin: 4rem 0 0 13rem;
+}
+
+.quadradoTextoPrimario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 27rem;
+    height: 14rem;
+    margin: 0;
+    text-align: center;
+}
+
+#primario, .primario {
+    font-family: var(--font-main);
+    color: #fff;
+    text-shadow: 1px 2px #000;
+    font-size: 30pt;
+    z-index: 10;
+}
+
+.quadradoTextoPrimario#primario {
+    margin-left: 10rem;
+}
+
+#secundario {
+    font-family: var(--font-main);
+    color: #fff;
+    text-shadow: 1px 2px #000;
+    font-size: 15pt;
+    position: relative;
+}
+
+#segundoQuadrado {
+    width: 600px;
+    height: 306px;
+    margin-top: 1rem;
+    background: #3b61bb;
+    border-radius: 10px 10px 50% 10px / 10px 10px 50% 10px;
+    box-shadow: 10px 8px 15px -5px rgba(0, 20, 79, 0.41);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.imagensSegundoQuadrado {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 27rem;
+}
+
+.miniGithub, .miniLinkedin  {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 10px;
+    margin: 1rem 0 0 4rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.miniGithub>img, .miniLinkedin>img  {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+/* Projetos */
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    width: 47rem;
+    height: 20rem;
+    position: relative;
+    margin: 3rem 0 0 11rem;
+}
+
+.projetos h1 { 
+    text-shadow: 1px 2px #000;
+}
+
+.projetosDois {
+    display: flex;
+    flex-direction: row;
+}
+
+#terceiroMiniQuadrado, #quartoMiniQuadrado {
+    width: 200px;
+    height: 200px;
+    margin: 1rem 0 0 1rem;
+    background: #3b61bb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#quintoMiniQuadrado {
+    display: none;
+}
+
+#imagemCurriculo {
+    margin: auto;
+    width: 190px;
+    height: 190px;
+}
+
+/* Terceiro Quadrado*/
+
+.terceiroQuadrado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    align-items: center;
+    margin: 4rem 0 20rem;
+}
+
+#terceiroQuadrado {
+    width: 100px;
+    height: 316px;
+    margin: 3rem 0 0 0;
+    background: #3b61bb;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.imagemTercerioQuadrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#imgReact {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: vaievolta 1s infinite alternate;
+}
+
+#imgPhp {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: vaievolta2 ease-in-out 1s infinite alternate;
+
+}
+
+#imgSql {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: vaievolta3 1s infinite alternate;
+
+}
+
+@keyframes vaievolta1 {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+       margin-top: 1.5rem;
+    }
+}
+
+@keyframes vaievolta2 {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+       margin-top: 1rem;
+    }
+}
+
+@keyframes vaievolta3 {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+       margin-top: 1rem;
+    }
+}
+
+.nextSkillsText {
+    width: 21rem;
+    font-family: var(--font-main);
+    text-shadow: 1px 2px #000;
+    color: #fff;
+    font-size: 20pt;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* Quarto Quadrado */
+
+.quartoQuadrado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 7rem 0 0rem;
+}
+
+#quartoQuadrado {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.mySkillsText {
+    font-family: var(--font-main);
+    text-shadow: 1px 2px #000;
+    color: #fff;
+    font-size: 20pt;
+}
+
+#primeiraSkill, #segundaSkill, #terceiraSkill {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    transition: margin 0.9s ease;
+}
+
+.primeiraSkill, .segundaSkill, .terceiraSkill {
+    width: 300px;
+    height: 100px;
+    background: #000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: height 0.9s ease;
+}
+
+#miniIcons {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: margin .9s ease;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    transition: transform .5s ease;
+    rotate: 0deg;
+    z-index: 2;
+}
+
+
+#textoSkill {
+    width: 19rem;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    margin: -5rem 0 0 0;
+    transition: opacity .1s ease-in, margin .9s ease;
+    font-family: var(--font-main);
+    opacity: 0;
+    z-index: 1;
+}
+
+#textoSkill p {
+    margin-top: 10rem;
+}
+
+/* Curriculo */
+
+#curriculo {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0000009d;
+    z-index: 99;
+}
+
+#quadradoCurriculo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70rem;
+    height: 40rem;
+    background: #3b61bb;
+    margin: 10rem auto;
+    border-radius: 5px;
+}
+
+#x {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin: 10px 0 0 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Projeto 1 */
+#projetoUm {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0000009d;
+    z-index: 99;
+}
+
+#quadradoProjetoUm {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 40rem;
+    background: #3b61bb;
+    margin: 10rem auto;
+    border-radius: 5px;
+}
+
+#imagemProjetoUm {
+    width: 30rem;
+    margin: auto;
+}
+
+#imagemProjetoUm img {
+    width: 35rem;
+}
+
+#textoProjetoUm {
+    margin: auto;
+    width: 25rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #fff;
+}
+
+#textoProjetoUm a {
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    margin: 1rem 0 0 -2rem;
+}
+/* =============================== */
+
+/* Projeto 2 */
+#projetoDois {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0000009d;
+    z-index: 99;
+}
+
+#quadradoProjetoDois {
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
+    height: 40rem;
+    background: #3b61bb;
+    margin: 10rem auto;
+    border-radius: 5px;
+}
+
+#imagemProjetoDois {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 100%;
+    margin: auto;
+}
+
+#imagemProjetoDois img {
+    margin: auto;
+    height: 17rem;
+}
+
+#textoProjetoDois {
+    margin: auto;
+    width: 25rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #fff;
+}
+
+#textoProjetoDois a {
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    margin: 1rem 0 0 -2rem;
+}
+
+/* =============================== */
+
+}
+
