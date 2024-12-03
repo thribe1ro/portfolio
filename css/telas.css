@@ -319,6 +319,44 @@
   top: 50rem;
 }
 
+/* Curriculo */
+#curriculo {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150vh;
+  background: #0000009d;
+  z-index: 99;
+}
+
+#quadradoCurriculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 40rem;
+  background: #3b61bb;
+  margin: 10rem auto;
+  border-radius: 5px;
+  margin-top: 15rem;
+}
+
+#quadradoCurriculo #x {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  top: -60rem;
+  left: 9rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  font-size: 15pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 /* Projeto 1 */
 #projetoUm {
   display: none;
