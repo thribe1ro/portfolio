@@ -366,7 +366,7 @@ display: none;
 position: absolute;
 top: 0;
 width: 25rem;
-height: auto;
+height: 175%;
 background: #0000009d;
 z-index: 99;
 }
@@ -406,6 +406,14 @@ color: #fff;
 top: -41rem;
 left: 10rem;
 }
+
+#x {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 15pt;
+}
+
 /* =============================== */
 
 /* Projeto 2 */
@@ -914,6 +922,14 @@ top: -41rem;
 left: 10rem;
 }
 
+#x {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 15pt;
+}
+
+
 /* =============================== */
 
 }
@@ -1386,6 +1402,13 @@ top: -37rem;
 left: 21rem;
 }
 
+#x {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 15pt;
+}
+
 /* =============================== */
 
 }
@@ -1520,6 +1543,10 @@ left: 21rem;
   margin: 0 auto;
   animation: vaievolta3 1s infinite alternate;
 
+}
+
+#x {
+  text-align: center;
 }
 
 }
@@ -2009,6 +2036,10 @@ left: 21rem;
       text-decoration: none;
       color: #000;
       margin: 1rem 0 0 -2rem;
+  }
+
+  #x {
+    text-align: center;
   }
   
   /* =============================== */
