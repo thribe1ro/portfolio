@@ -463,6 +463,10 @@ top: -41rem;
 left: 10rem;
 }
 
+#botaoX {
+  height: 100%;
+}
+
 /* =============================== */
 }
 
@@ -929,7 +933,9 @@ left: 10rem;
   font-size: 15pt;
 }
 
-
+#botaoX {
+  height: 100%;
+}
 /* =============================== */
 
 }
@@ -1409,6 +1415,10 @@ left: 21rem;
   font-size: 15pt;
 }
 
+#botaoX {
+  height: 100%;
+}
+
 /* =============================== */
 
 }
@@ -1547,6 +1557,10 @@ left: 21rem;
 
 #x {
   text-align: center;
+}
+
+#botaoX {
+  height: 100%;
 }
 
 }
@@ -2041,6 +2055,10 @@ left: 21rem;
   #x {
     text-align: center;
   }
+
+  #botaoX {
+    height: 100%;
+}
   
   /* =============================== */
   
