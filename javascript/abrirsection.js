@@ -37,7 +37,6 @@ const projeto1 = document.getElementById("terceiroMiniQuadrado")
 var projetoUm = document.getElementById("projetoUm")
 var xProjetoUm = document.querySelector(".xProjetoUm")
 var ativarUm = false
-const projeto3 = document.getElementById("quintoMiniQuadrado")
 
 // Quadrado 1
 function passarMouseImg3(tipo) {
@@ -49,14 +48,15 @@ function passarMouseImg3(tipo) {
         projeto2.style.margin = "1rem 0 0 1rem"
     }
 }
-
     projeto1.addEventListener("click", function(){
     ativarUm = !ativarUm
     projetoUm.style.display = ativarUm ? "flex" : "none"
 })
     xProjetoUm.addEventListener("click", function() {
     projetoUm.style.display = ativarUm ? "none" : "flex"
+    
 })
+
 
 // Quadrado 2
 const projeto2 = document.getElementById("quartoMiniQuadrado")
@@ -68,6 +68,7 @@ function passarMouseImg4(tipo) {
     if (tipo == 1) {
         projeto2.style.rotate = "-20deg"
         projeto1.style.margin = "1rem 2rem 0 0"
+        projeto3.style.margin = "1rem 0 0 2rem"
     } if (tipo == 2) {
         projeto2.style.rotate = "0deg"
         projeto1.style.margin = "1rem 0 0 1rem"
@@ -82,7 +83,12 @@ projeto2.addEventListener("click", function(){
     projetoDois.style.display = ativarDois ? "none" : "flex"
 })
 
-/* Quadrado 3
+// Quadrado 3
+const projeto3 = document.getElementById("quintoMiniQuadrado")
+var projetoTres = document.getElementById("projetoTres")
+var xProjetoTres = document.querySelector(".xProjetoTres")
+var ativarTres = false
+
 function passarMouseImg5(tipo) {
     if (tipo == 1) {
     projeto3.style.rotate = "-25deg"
@@ -92,10 +98,16 @@ function passarMouseImg5(tipo) {
     projeto3.style.rotate = "0deg"
     projeto2.style.margin = "1rem 0 0 1rem"
     projeto1.style.margin = "1rem 0 0 1rem"
-    } if (tipo == 3) {
-        alert("Ola")
     }
-} */
+
+projeto3.addEventListener("click", function(){
+    ativarTres = !ativarTres
+    projetoTres.style.display = ativarTres ? "flex" : "none"
+})
+    xProjetoTres.addEventListener("click", function() {
+    projetoTres.style.display = ativarTres ? "none" : "flex"
+})
+}
     
 // =================================================================================================== //
 
